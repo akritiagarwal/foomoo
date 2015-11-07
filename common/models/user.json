@@ -18,10 +18,20 @@
     "contactNumber": {
       "type": "number",
       "required": true
+    },
+    "location":{
+      "type":"object",
+      "required":true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "foodOrders":{
+      "type": "hasMany",
+      "model": "foorOrders",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
